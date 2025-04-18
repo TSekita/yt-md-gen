@@ -23,7 +23,7 @@ fn main() {
     match extract_video_id(&args.url) {
         Some(video_id) => {
             println!(
-                "![Alt text](https://img.youtube.com/vi/{}/0.jpg)\n[Watch the video](https://www.youtube.com/watch?v={})",
+                "![Alt text](https://img.youtube.com/vi/{}/0.jpg)\n\n[Watch the video](https://www.youtube.com/watch?v={})",
                 video_id, video_id
             );
         }
